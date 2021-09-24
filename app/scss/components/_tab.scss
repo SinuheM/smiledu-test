@@ -1,0 +1,40 @@
+.tab {
+  &__list {
+    display: flex;
+    border-bottom: 1px solid $border-gray;
+  }
+  &__el {
+    padding: 10px 12px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.5s;
+    &:hover {
+      color: $yellow;
+    }
+    &--active {
+      cursor: initial;
+      color: $yellow;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 12px;
+        width: calc(100% - 24px);
+        border-top: 3px solid $cyan;
+        border-right: 0;
+        border-left: 0;
+        border-bottom: 3px solid transparent;
+        border-radius: 6px;
+      }
+    }
+  }
+  &__content {
+    &-el {
+      display: none;
+    }
+    &-el-active {
+      display: block;
+    }
+  }
+}

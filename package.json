@@ -1,0 +1,28 @@
+{
+  "name": "smiledu-test",
+  "version": "1.0.0",
+  "description": "Smiledu technical test",
+  "main": "index.html",
+  "dependencies": {
+    "@mdi/font": "^6.1.95"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-pug": "^3.0.0",
+    "gulp-sass": "^3.2.0",
+    "gulp-terser": "^1.1.6",
+    "gulp-useref": "^3.1.6",
+    "npm-run-all": "^4.1.5"
+  },
+  "scripts": {
+    "dev": "npm-run-all -s init watch",
+    "init": "gulp init",
+    "watch": "gulp watch",
+    "build": "gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adrian Priale Cordova",
+  "license": "ISC"
+}

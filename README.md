@@ -1,1 +1,1 @@
-# smiledu-test
+## Smiledu technical test

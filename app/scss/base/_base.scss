@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Product Sans";
+  src: url("../assets/fonts/ProductSans-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-family: Product Sans;
+}
+
+ul {
+  list-style-type: none;
+}

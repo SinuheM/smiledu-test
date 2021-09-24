@@ -1,0 +1,13 @@
+.input {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $border-gray;
+  &__el,
+  &__el:active,
+  &__el:focus,
+  &__el:focus-visible {
+    background: transparent;
+    border: 0;
+    padding: 5px;
+  }
+}

@@ -1,0 +1,22 @@
+.ripple {
+  position: relative;
+  overflow: hidden;
+  &__effect {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0;
+    background: $light-cyan;
+    animation: ripple-animation 2s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+}
+
+@keyframes ripple-animation {
+  from {
+    opacity: 1;
+    transform: scale(0);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1);
+  }
+}

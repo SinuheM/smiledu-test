@@ -1,0 +1,62 @@
+.select {
+  position: relative;
+  min-width: 200px;
+  &--solid {
+    background: $lighter-gray;
+    padding: 0 12px;
+    border-radius: 8px 8px 0 0;
+  }
+  &--active &__list {
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.12);
+    height: max-content;
+    min-height: 40px;
+  }
+  &__list {
+    background: $white;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: scroll;
+    position: absolute;
+    top: 36px;
+    height: 0;
+    transition: height 0.5s;
+    z-index: 1;
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+    &::-webkit-scrollbar-track {
+      background: #f5f5f5;
+      border-radius: 4px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 4px;
+    }
+    &::-webkit-scrollbar-thumb:active {
+      background-color: #999999;
+    }
+    &::-webkit-scrollbar-thumb:active {
+      background: #b3b3b3;
+      box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    }
+  }
+  &__title {
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-between;
+    cursor: default;
+  }
+  .mdi-chevron-up {
+    transform: rotate(180deg);
+    vertical-align: middle;
+  }
+  &__el {
+    padding: 12px 15px;
+    display: block;
+    width: 200px;
+    cursor: pointer;
+    &:hover {
+      background: $lighter-gray;
+    }
+  }
+}

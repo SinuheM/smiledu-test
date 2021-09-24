@@ -1,0 +1,34 @@
+.table {
+  color: $dark-gray;
+  margin: 0;
+  width: 100%;
+  font-size: 0.875rem;
+  &__data,
+  &__head {
+    border-bottom: 1px solid $border-gray;
+    padding: 0.75rem 15px;
+    text-align: left;
+  }
+  &__head {
+    font-weight: normal;
+    font-size: 0.75rem;
+  }
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px 15px;
+  }
+  &__perpage {
+    display: flex;
+    align-items: center;
+  }
+  &__select {
+    min-width: 50px;
+    margin-left: 5px;
+    border-bottom: 1px solid $border-gray;
+  }
+  &__page {
+    margin: 0 16px;
+  }
+}

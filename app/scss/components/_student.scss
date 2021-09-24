@@ -1,0 +1,92 @@
+.student {
+  display: flex;
+  font-size: 0.875rem;
+  &__general {
+    padding: 15px 20px 100px;
+    width: 275px;
+    border-right: 1px solid $border-gray;
+  }
+  &__info {
+    flex-grow: 1;
+  }
+  &__detail-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 7px 0;
+  }
+  &__profile {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: repeat(2, auto);
+    column-gap: 5px;
+  }
+  &__picture {
+    width: 40px;
+    border-radius: 50%;
+    grid-row: 1/3;
+  }
+  &__status-list {
+    display: flex;
+    align-items: baseline;
+  }
+  &__status-el {
+    height: 5px;
+  }
+  &__status {
+    width: 5px;
+    height: 5px;
+    margin-right: 5px;
+  }
+  &__profile-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.75rem;
+  }
+  &__menu {
+    grid-row: 1/3;
+    grid-column: 3/4;
+    .list-opt__list {
+      right: 0;
+    }
+  }
+  &__enroll {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    &-text {
+      margin-left: 10px;
+    }
+  }
+  &__registered-class {
+    margin: 10px 0;
+  }
+  &__class {
+    font-size: 0.875rem;
+    font-weight: normal;
+  }
+  &__family {
+    &-member,
+    &-add {
+      margin: 3px;
+      margin-left: 0;
+      display: inline-block;
+      vertical-align: top;
+    }
+    &-img {
+      width: 30px;
+      height: auto;
+      border-radius: 50%;
+    }
+  }
+  &__info-row {
+    display: flex;
+    margin: 15px 0;
+    align-items: center;
+    &:first-child {
+      margin-top: 0;
+    }
+    .button {
+      margin: 0 15px;
+    }
+  }
+}

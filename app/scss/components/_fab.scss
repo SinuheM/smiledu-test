@@ -1,0 +1,51 @@
+.fab {
+  &__btn {
+    cursor: pointer;
+    transition: background-color 1s;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px,
+      rgba(0, 0, 0, 0.14) 0px 6px 10px 0px, rgba(0, 0, 0, 0.12) 0px 1px 18px 0px;
+  }
+  &__more {
+    border: 0;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    border-radius: 50%;
+    color: $white;
+    background: $cyan;
+    transition: background-color 1s, transform 0.5s;
+    &:hover {
+      background: darken($color: $cyan, $amount: 10);
+    }
+  }
+  &__list {
+    width: 50px;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 5px 0;
+  }
+  &__opts {
+    background: $white;
+    border: 0;
+    height: 0;
+    width: 0;
+    font-size: 0;
+    color: $dark-gray;
+    border-radius: 50%;
+    margin: 5px 0;
+    overflow: hidden;
+    transition: width 0.5s, height 0.5s, font-size 0.5s;
+    &:hover {
+      background: $light-gray;
+    }
+  }
+  &--active &__more {
+    transform: rotate(45deg);
+  }
+  &--active &__opts {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+  }
+}

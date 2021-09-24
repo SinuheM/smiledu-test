@@ -1,0 +1,26 @@
+.accordion {
+  border-bottom: 1px solid $border-gray;
+  .mdi-chevron-up {
+    transform: rotate(180deg);
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    cursor: pointer;
+  }
+  &__content {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s, padding 0.5s;
+  }
+  &--active &__content {
+    padding: 5px 25px 25px;
+    height: auto;
+  }
+  &--active {
+    .mdi-chevron-up {
+      transform: rotate(0deg);
+    }
+  }
+}

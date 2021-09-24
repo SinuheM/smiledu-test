@@ -1,0 +1,8 @@
+.status {
+  &--uptodate {
+    background: cyan;
+  }
+  &--complete {
+    background: darkmagenta;
+  }
+}

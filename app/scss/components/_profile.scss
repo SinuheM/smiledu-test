@@ -1,0 +1,23 @@
+.profile {
+  padding: 10px 15px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: $dark-gray;
+  &:hover {
+    background-color: $light-gray;
+  }
+  &__image {
+    border-radius: 50%;
+    height: 35px;
+    margin-right: 10px;
+  }
+  &__info {
+    display: flex;
+  }
+  &__rol {
+    font-size: 0.75rem;
+  }
+}

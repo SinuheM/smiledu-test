@@ -1,0 +1,21 @@
+main.main
+  .main__header
+    ul.main__breadcrumb
+      li.main__crumb 
+        a.main__crumb-link(href="#") Matricula
+      li.main__crumb 
+        a.main__crumb-link(href="#") Estudiantes
+    .main__header-options 
+      button.button.main__header-option(href="#")
+        i.nav__icon.icn.icn--box
+      button.button.main__header-option(href="#")
+        i.nav__icon.icn.icn--box
+      button.button.main__header-option(href="#")
+        i.nav__icon.icn.icn--box
+      button.button.main__header-option(href="#")
+        i.nav__icon.icn.icn--box
+  .main__content 
+    include ../components/college.pug
+    include ../components/card.pug
+    .main__options
+      include ../components/fab.pug

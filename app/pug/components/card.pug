@@ -1,0 +1,165 @@
+.card
+  .student 
+    .student__general
+      .student__profile
+        img.student__picture(src="https://randomuser.me/api/portraits/men/24.jpg", alt="")      
+        .student__profile-info
+          span.student__firstname Elio
+          span.student__lastname Gonzales Perez
+        ul.student__status-list
+          li.student__status-el
+            i.icn.icn--dot.status--uptodate.student__status
+          li.student__status-el
+            i.icn.icn--dot.status--complete.student__status
+        .student__menu
+          button.button#studentMenu
+            .icn.icn--menu-line
+              i 
+              i 
+              i 
+          .student__menu-opts.list-opt
+              ul.list-opt__list 
+                li.list-opt__el
+                  i.icn.icn--box
+                  | Unir familia
+                li.list-opt__el.list-opt__el--disabled
+                  i.icn.icn--box
+                  | Activar estudiante
+                li.list-opt__el
+                  i.icn.icn--box
+                  | Desactivar estudiante
+                li.list-opt__el
+                  i.icn.icn--box
+                  | Declaración del padre
+                li.list-opt__el
+                  i.icn.icn--box
+                  | Trasladar estudiante
+                li.list-opt__el
+                  i.icn.icn--box
+                  | Solicitud de act. datos
+                li.list-opt__el
+                  i.icn.icn--box
+                  | Ficha de datos
+      .student__detail 
+        h2.section__title Detalles del estudiante
+        .student__detail-info
+          p.student__detail-row
+            span Nro documento
+            span 24324234
+          p.student__detail-row
+            span Sede
+            span PREMIUM COLLEGE-SURCO
+          p.student__detail-row
+            span Grado
+            span 1° Primaria
+          p.student__detail-row
+            span Estado de pago
+            button.button.button--bordered.button--green.button--sm
+              | Al día
+      .student__enrollment
+        h2.section__title Matricular
+        .student__enroll
+          button.button.button--skeu 
+            i.icn.icn--box
+          p.student__enroll-text Matricular en aula
+        .student__registered 
+          .student__registered-class 
+            h3.student__class LOS LEÑADORES
+            p.student__class Año lectivo
+          .student__history
+            button.button.button--bordered.button--yellow(data-modal="dialogHistory")
+              | Historico de aulas
+      .student__sibling 
+        h2.section__title Hermanos(as)
+        ul.student__family-list 
+          li.student__family-member
+            img.student__family-img(src="https://randomuser.me/api/portraits/women/24.jpg", alt="")
+          li.student__family-member
+            img.student__family-img(src="https://randomuser.me/api/portraits/women/25.jpg", alt="")
+          li.student__family-add
+            button.button.button--sm.button--skeu
+              i.icn.icn--box
+      .student__family
+        h2.section__title Familiares
+        ul.student__family-list 
+          li.student__family-member
+            img.student__family-img(src="https://randomuser.me/api/portraits/men/64.jpg", alt="")
+          li.student__family-member
+            img.student__family-img(src="https://randomuser.me/api/portraits/women/64.jpg", alt="")
+    .student__info
+      .tab 
+        ul.tab__list
+          li.tab__el.tab__el--active
+            | Información
+          li.tab__el
+            | Ficha médica
+          li.tab__el
+            | Ficha psicológica
+          li.tab__el
+            | Compromisos
+        .tab__content
+          .tab__content-el.tab__content-el-active
+            .accordion
+              .accordion__header 
+                p.accordion__title Personal
+                i.mdi.mdi-chevron-up
+            .accordion
+              .accordion__header
+                p.accordion__title Contacto
+                i.mdi.mdi-chevron-up
+              .accordion__content 
+                | ...
+            .accordion
+              .accordion__header 
+                p.accordion__title Datos de privacidad
+                i.mdi.mdi-chevron-up
+              .accordion__content 
+                | ...
+            .accordion.accordion--active
+              .accordion__header 
+                p.accordion__title Adicional
+                i.mdi.mdi-chevron-up
+              .accordion__content
+                .student__info-row
+                  .select.select--solid
+                    .select__title
+                      span.select__active Selec. colegio de procedencia
+                      i.mdi.mdi-chevron-up
+                    ul.select__list 
+                      li.select__el PREMIUM COLLEGE - SURCO
+                      li.select__el ANOTHER COLLEGE - MIRAFLORES
+                  button.button.button--skeu
+                    .icn.icn--box 
+                .student__info-row
+                  .select.select--solid
+                    .select__title
+                      span.select__active Selec. religión
+                      i.mdi.mdi-chevron-up
+                    ul.select__list 
+                      li.select__el Selec. religión
+                      li.select__el Adventista
+                      li.select__el Católico
+                      li.select__el Cristiano
+                      li.select__el Evangélica
+                      li.select__el Judía
+                .student__info-row
+                  p ¿Quiénes pueden recoger al estudiante?
+                .student__info-row
+                  button.button.button--sm.button--skeu#addResponsible
+                    .icn.icn--box 
+                  label(for="addResponsible") Agregar responsables (3 máx.)
+                .student__info-row
+                  p ¿Cómo se regresa a casa el estudiante?
+                .student__info-row
+                  .select.select--solid
+                    .select__title
+                      span.select__active Selec. medio de movilidad
+                      i.mdi.mdi-chevron-up
+                    ul.select__list 
+                      li.select__el ...
+          .tab__content-el 
+            | ...
+          .tab__content-el 
+            | ...
+          .tab__content-el 
+            | ...

@@ -1,0 +1,63 @@
+.dialogs
+  section.dialog#dialogHistory
+    .dialog__overlay 
+    .dialog__content
+      h2.section__title.dialog__title Histórico de aulas
+      .history__class
+        .history__name
+          img.student__picture.history__picture(src="https://randomuser.me/api/portraits/men/24.jpg", alt="")      
+          .student__profile-info
+            | Elio Gonzales Perez
+        .history__table 
+          table.table 
+            thead.table__head 
+              tr.table__row 
+                th.table__head Año
+                th.table__head Sede
+                th.table__head Programa
+                th.table__head Grado
+                th.table__head Aula / Sección
+                th.table__head Beca
+                th.table__head Estado
+            tbody.table__body 
+              tr.table__row
+                td.table__data 2020
+                td.table__data PREMIUM COLLEGE-SURCO
+                td.table__data Año lectivo
+                td.table__data 1° PRI
+                td.table__data LOS LEÑADORES
+                td.table__data BECA SOCIOECONOMICO
+                td.table__data Activo
+              tr.table__row
+                td.table__data 2020
+                td.table__data PREMIUM COLLEGE-SURCO
+                td.table__data Año lectivo
+                td.table__data 1° PRI
+                td.table__data LOS PASTORES
+                td.table__data BECA SOCIOECONOMICO
+                td.table__data Inactivo
+          .table__footer
+            .table__perpage
+              p Registros por página
+              .select.table__select
+                .select__title
+                  span.select__active 10
+                  i.mdi.mdi-chevron-up
+                ul.select__list 
+                  li.select__el 10
+                  li.select__el 20
+            p.table__page
+              span.table__page-current 1
+              |  - 
+              span.table__page-total 3
+              |  de 
+              span.table__page-total 3
+            .table__pagination
+              button.button
+                i.icn.icn--box
+              button.button
+                i.icn.icn--box
+              button.button
+                i.icn.icn--box
+              button.button
+                i.icn.icn--box

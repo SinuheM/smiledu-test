@@ -1,0 +1,66 @@
+.college {
+  width: 300px;
+  font-size: 14px;
+  padding: 20px;
+  display: inline-block;
+  vertical-align: top;
+  &__years-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__search {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    &-input {
+      width: calc(100% - 80px);
+    }
+    &-placeholder {
+      text-align: center;
+      padding: 20px 0;
+    }
+    &-opts {
+      width: fit-content;
+    }
+  }
+  &__select {
+    width: calc(100% - 80px);
+  }
+  &__degree {
+    &-list {
+      list-style-type: none;
+    }
+    &-el {
+      border: 1px solid $border-gray;
+      border-radius: 10px;
+      margin: 15px 5px;
+      &--active {
+        border: 0;
+        background: $white;
+        box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+      }
+    }
+    &-title {
+      padding: 12px;
+      display: flex;
+      justify-content: space-between;
+      text-decoration: none;
+      color: $dark-gray;
+    }
+    &-ellist {
+      padding: 0 12px 0 30px;
+    }
+    &-section {
+      padding: 12px 0;
+      display: flex;
+      justify-content: space-between;
+    }
+    &-section-count {
+      color: $green;
+    }
+  }
+  &__filter-opts {
+    width: 80px;
+    display: flex;
+  }
+}

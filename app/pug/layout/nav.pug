@@ -1,0 +1,109 @@
+nav.nav
+  .nav__header 
+    button.button.nav__menu#menu
+      .icn.icn--menu
+        i 
+        i 
+        i 
+    img.nav__logo.logo(src="assets/images/img-logo.png", alt="")
+  .nav__user 
+    a(href="#").profile 
+      .profile__info.nav__profile-info
+        img.profile__image(src="https://randomuser.me/api/portraits/med/women/57.jpg", alt="")
+        .profile__detail 
+          p.profile__name Maria Salvatierra
+          p.profile__rol Promotor
+      i.mdi.mdi-chevron-up
+  .nav__base
+    ul.nav__list 
+      li.nav__el
+        a(href="#").nav__link.ripple
+          .nav__link-info
+            i.nav__icon.icn.icn--box
+            span.nav__link-text Dashboard
+      li.nav__el
+        a(href="#").nav__link.ripple
+          .nav__link-info
+            i.nav__icon.icn.icn--box
+            span.nav__link-text Noticias
+      li.nav__el
+        a(href="#").nav__link.ripple
+          .nav__link-info
+            i.nav__icon.icn.icn--box
+            span.nav__link-text Agenda
+  .nav__options
+    ul.nav__list 
+      li.nav__el
+        a(href="#").nav__link.ripple
+          .nav__link-info
+            i.nav__icon.icn.icn--box
+            span.nav__link-text Planificación institucional
+          i.mdi.mdi-chevron-up
+      li.nav__el
+        a(href="#").nav__link.ripple
+          .nav__link-info
+            i.nav__icon.icn.icn--box
+            span.nav__link-text Talento humano
+          i.mdi.mdi-chevron-up
+      li.nav__el
+        a(href="#").nav__link.ripple
+          .nav__link-info
+            i.nav__icon.icn.icn--box
+            span.nav__link-text Tesorería
+          i.mdi.mdi-chevron-up
+      li.nav__el
+        a(href="#").nav__link.ripple
+          .nav__link-info
+            i.nav__icon.icn.icn--box
+            span.nav__link-text Gestión académica
+          i.mdi.mdi-chevron-up
+      li.nav__el.nav__el--has-children
+        a(href="#").nav__link.ripple.nav__link--active
+          .nav__link-info
+            i.nav__icon.icn.icn--box
+            span.nav__link-text Matricula
+          i.nav__el-more.mdi.mdi-chevron-up
+        ul.nav__sublist 
+          li.nav__sub-el
+            a(href="#").nav__link.ripple.nav__link--active
+              .nav__link-info
+                | Estudiantes
+          li.nav__sub-el
+            a(href="#").nav__link.ripple
+              .nav__link-info
+                | Reportes
+      li.nav__el
+        a(href="#").nav__link.ripple
+          .nav__link-info
+            i.nav__icon.icn.icn--box
+            span.nav__link-text Programación curricular
+          i.mdi.mdi-chevron-up
+      li.nav__el
+        a(href="#").nav__link.ripple
+          .nav__link-info
+            i.nav__icon.icn.icn--box
+            span.nav__link-text Configuración
+          i.mdi.mdi-chevron-up
+  .nav__facture 
+    ul.nav__list 
+      li.nav__el
+        a(href="#").nav__link.ripple
+          .nav__link-info
+            i.nav__icon.icn.icn--box
+            span.nav__link-text Facturación
+  .nav__plan
+    ul.nav__list 
+      li.nav__el
+        i.nav__icon.icn.icn--smiledu
+        .nav__plan-info.plan
+          p 2020 Smiledu - 
+            i Premium 
+          .progress-bar 
+          .plan__detail 
+            i.plan__type PREMIUN
+            span.plan__count 26/∞
+      li.nav__el.nav__terms.nav__no-icon 
+        a.plan__terms(href="#") Privacidad
+        | -
+        a.plan__terms(href="#") Condiciones
+        
