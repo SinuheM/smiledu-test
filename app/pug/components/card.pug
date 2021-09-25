@@ -10,7 +10,7 @@
           li.student__status-el
             i.icn.icn--dot.status--uptodate.student__status
           li.student__status-el
-            i.icn.icn--dot.status--complete.student__status
+            i.icn.icn--dot.status--info-complete.student__status
         .student__menu
           button.button#studentMenu
             .icn.icn--menu-line
@@ -18,28 +18,28 @@
               i 
               i 
           .student__menu-opts.list-opt
-              ul.list-opt__list 
-                li.list-opt__el
-                  i.icn.icn--box
-                  | Unir familia
-                li.list-opt__el.list-opt__el--disabled
-                  i.icn.icn--box
-                  | Activar estudiante
-                li.list-opt__el
-                  i.icn.icn--box
-                  | Desactivar estudiante
-                li.list-opt__el
-                  i.icn.icn--box
-                  | Declaración del padre
-                li.list-opt__el
-                  i.icn.icn--box
-                  | Trasladar estudiante
-                li.list-opt__el
-                  i.icn.icn--box
-                  | Solicitud de act. datos
-                li.list-opt__el
-                  i.icn.icn--box
-                  | Ficha de datos
+            ul.list-opt__list 
+              li.list-opt__el
+                i.mdi.mdi-account-multiple-outline
+                | Unir familia
+              li.list-opt__el.list-opt__el--disabled
+                i.mdi.mdi-account-outline
+                | Activar estudiante
+              li.list-opt__el
+                i.mdi.mdi-account-remove-outline
+                | Desactivar estudiante
+              li.list-opt__el
+                i.mdi.mdi-clipboard-outline
+                | Declaración del padre
+              li.list-opt__el
+                i.mdi.mdi-swap-vertical
+                | Trasladar estudiante
+              li.list-opt__el
+                i.mdi.mdi-clipboard-plus-outline
+                | Solicitud de act. datos
+              li.list-opt__el
+                i.mdi.mdi-arrow-down
+                | Ficha de datos
       .student__detail 
         h2.section__title Detalles del estudiante
         .student__detail-info
@@ -60,7 +60,7 @@
         h2.section__title Matricular
         .student__enroll
           button.button.button--skeu 
-            i.icn.icn--box
+            i.mdi.mdi-plus-box-outline
           p.student__enroll-text Matricular en aula
         .student__registered 
           .student__registered-class 
@@ -78,7 +78,7 @@
             img.student__family-img(src="https://randomuser.me/api/portraits/women/25.jpg", alt="")
           li.student__family-add
             button.button.button--sm.button--skeu
-              i.icn.icn--box
+              i.mdi.mdi-account-plus-outline
       .student__family
         h2.section__title Familiares
         ul.student__family-list 
@@ -129,7 +129,7 @@
                       li.select__el PREMIUM COLLEGE - SURCO
                       li.select__el ANOTHER COLLEGE - MIRAFLORES
                   button.button.button--skeu
-                    .icn.icn--box 
+                    i.mdi.mdi-pencil-plus-outline
                 .student__info-row
                   .select.select--solid
                     .select__title
@@ -146,7 +146,7 @@
                   p ¿Quiénes pueden recoger al estudiante?
                 .student__info-row
                   button.button.button--sm.button--skeu#addResponsible
-                    .icn.icn--box 
+                    i.mdi.mdi-account-plus-outline
                   label(for="addResponsible") Agregar responsables (3 máx.)
                 .student__info-row
                   p ¿Cómo se regresa a casa el estudiante?
@@ -163,3 +163,4 @@
             | ...
           .tab__content-el 
             | ...
+  include ../components/legend.pug

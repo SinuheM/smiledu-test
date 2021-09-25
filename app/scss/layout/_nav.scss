@@ -5,6 +5,9 @@
   display: inline-block;
   background: $white;
   transition: width 0.5s;
+  position: absolute;
+  top: 0;
+  bottom: 0;
   .mdi-chevron-up {
     transform: rotate(180deg);
   }
@@ -103,6 +106,7 @@
     }
     &__link--active {
       position: relative;
+      overflow: visible;
       &::after {
         content: "";
         width: 8px;

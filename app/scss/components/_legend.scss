@@ -1,0 +1,21 @@
+.legend {
+  display: flex;
+  margin: 0 5px;
+  position: absolute;
+  bottom: 40px;
+  font-size: 0.875rem;
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__el {
+    display: flex;
+    align-items: baseline;
+    margin: 0 5px;
+  }
+  .icn {
+    margin: 0 3px;
+    width: 10px;
+    height: 10px;
+  }
+}

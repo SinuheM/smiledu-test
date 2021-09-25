@@ -9,7 +9,7 @@
     background: $white;
     border-radius: 5px;
     max-height: 200px;
-    overflow-y: scroll;
+    overflow-y: auto;
     position: absolute;
     top: 0;
     height: 0;
@@ -46,6 +46,9 @@
     &--disabled {
       opacity: 0.5;
       cursor: default;
+    }
+    i {
+      margin-right: 5px;
     }
   }
   .icn {

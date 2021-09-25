@@ -1,8 +1,17 @@
 .status {
   &--uptodate {
-    background: cyan;
+    background: $turquoise;
   }
-  &--complete {
-    background: darkmagenta;
+  &--debt {
+    background: $red;
+  }
+  &--info-incomplete {
+    background: $dark-gray;
+  }
+  &--info-complete {
+    background: $cyan;
+  }
+  &--world {
+    background: $gray;
   }
 }

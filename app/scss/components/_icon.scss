@@ -1,3 +1,8 @@
+.icn,
+.mdi {
+  color: $dark-gray;
+  font-size: 1rem;
+}
 .icn {
   display: inline-block;
   vertical-align: middle;
@@ -38,6 +43,84 @@
     width: 22px;
     height: 22px;
     background-image: url("../assets/images/icn-box.png");
+    background-size: contain;
+  }
+  &--bell {
+    width: 22px;
+    height: 22px;
+    background-image: url("../assets/images/icn-bell.png");
+    background-size: contain;
+  }
+  &--config {
+    width: 22px;
+    height: 22px;
+    background-image: url("../assets/images/icn-config.png");
+    background-size: contain;
+  }
+  &--dashboard {
+    width: 22px;
+    height: 22px;
+    background-image: url("../assets/images/icn-dashboard.png");
+    background-size: contain;
+  }
+  &--door {
+    width: 22px;
+    height: 22px;
+    background-image: url("../assets/images/icn-door.png");
+    background-size: contain;
+  }
+  &--list {
+    width: 22px;
+    height: 22px;
+    background-image: url("../assets/images/icn-list.png");
+    background-size: contain;
+  }
+  &--news {
+    width: 22px;
+    height: 22px;
+    background-image: url("../assets/images/icn-news.png");
+    background-size: contain;
+  }
+  &--payment {
+    width: 22px;
+    height: 22px;
+    background-image: url("../assets/images/icn-payment.png");
+    background-size: contain;
+  }
+  &--plan {
+    width: 22px;
+    height: 22px;
+    background-image: url("../assets/images/icn-plan.png");
+    background-size: contain;
+  }
+  &--schedule {
+    width: 22px;
+    height: 22px;
+    background-image: url("../assets/images/icn-schedule.png");
+    background-size: contain;
+  }
+  &--program {
+    width: 22px;
+    height: 22px;
+    background-image: url("../assets/images/icn-program.png");
+    background-size: contain;
+  }
+  &--talent {
+    width: 22px;
+    height: 22px;
+    background-image: url("../assets/images/icn-talent.png");
+    background-size: contain;
+  }
+  &--king {
+    width: 22px;
+    height: 22px;
+    background-image: url("../assets/images/icn-king.png");
+    background-size: contain;
+  }
+  &--semiking {
+    width: 22px;
+    height: 22px;
+    background-image: url("../assets/images/icn-semiking.png");
     background-size: contain;
   }
   &--dot {

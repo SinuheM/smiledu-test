@@ -3,9 +3,11 @@
   vertical-align: top;
   margin-left: -4px;
   width: calc(100% - 280px);
-  transition: width 0.5s;
+  margin-left: 280px;
+  transition: width 0.5s, margin 0.5s;
   .wrapper--collapse & {
     width: calc(100% - 65px);
+    margin-left: 65px;
   }
   &__header {
     height: 130px;
